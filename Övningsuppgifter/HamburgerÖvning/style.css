@@ -1,0 +1,46 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    /* background-color: aqua; */
+    right:0;
+    left:0;
+    top:0;
+    height:5rem;
+    position: fixed;
+}
+.nav{
+    width:15%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+    cursor: pointer;
+    
+}
+.headerCenter{
+    position: absolute;
+    left:20%;
+    height:100%;
+    width:60%;
+    /* background-color: brown; */
+    top:10px;
+}
+.img{
+    left:85%;
+    position: absolute;
+    top:10px;
+}
+.nav-menu{
+    display: block;
+}
+.nav-item{
+    display: block;
+}
+
+
+
+ 
