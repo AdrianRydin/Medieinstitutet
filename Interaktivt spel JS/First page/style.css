@@ -61,18 +61,23 @@ main{
     /* background-color: #888; */
     left:0;
     right:0;
+    top:10%;
     
     
 }
 .story-div{
     left:0;
     right:0;
-    top:10%;
+    top:20%;
 }
 .story-text{
     top:20%;
+
 }
 
+@media (max-width:760px){
+    header
+}
 
 
 
