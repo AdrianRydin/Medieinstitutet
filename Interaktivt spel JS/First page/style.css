@@ -20,7 +20,7 @@ header{
     /* background-color: coral; */
     font-weight: bold;
     font-size: 20px;
-
+    transition-duration: 0.5s;
 }
 
 .help{
@@ -58,7 +58,7 @@ main{
     left:0;
     height:100%;
     flex-direction: column;
-    background-image: linear-gradient(white, rgb(199, 199, 199));
+    background-color:rgb(221, 221, 221);
     z-index: -1;
 
 }
@@ -109,6 +109,10 @@ button{
     
 }
 
+button:hover{
+    flex-grow: 0.01;  
+    
+}
 @media (max-width:870px){
     header{
 
