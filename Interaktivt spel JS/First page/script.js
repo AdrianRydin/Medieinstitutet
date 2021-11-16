@@ -1,4 +1,8 @@
 
+// const userName = prompt("Hej! Välkommen till mitt interaktiva spel, vänligen ange ditt namn");
+
+// console.log(userName);
+
 function helpButtonClick(){
 
 
