@@ -90,7 +90,7 @@ main{
 }
 
 .choice-buttons{
-    bottom:40%;
+    bottom:60%;
     left:0;
     right:0;
     justify-content: space-evenly;
@@ -112,6 +112,20 @@ button{
 button:hover{
     flex-grow: 0.01;  
     
+}
+#staircase{
+    width:450px;
+    bottom:20%;
+    left: 18%;
+    position: absolute;
+
+}
+
+#baseball{
+    width: 450px;
+    right:18%;
+    position: absolute;
+    bottom:10%;
 }
 @media (max-width:870px){
     header{

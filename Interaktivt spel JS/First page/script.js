@@ -23,3 +23,14 @@ window.onclick = function(event) {
       }
     }
   }
+
+
+
+ function nextScene(){
+    
+
+    console.log("YO")
+
+    
+     
+ }
