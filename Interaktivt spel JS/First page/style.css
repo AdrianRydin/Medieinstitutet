@@ -161,17 +161,39 @@ button:hover{
     position: absolute;
     bottom:200px;
     left:100px;
-    animation-name: hungry;
-    transition: 2s;
+    
 }
-@keyframes hungry{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+
+.weapon-scene{
+    font-size: 18px;
+    margin-top:25px;
 }
+.weapon-choices{
+    margin-top: 15rem;
+    justify-content: space-evenly;
+    display: flex;
+    left:0;
+    right:0;
+}
+#weaponImage{
+    width:450px;
+    left:15%;
+    bottom:10%;
+    position: absolute;
+}
+#staircase2{
+    width:450px;
+    bottom:20%;
+    position: absolute;
+    right:15%;
+}
+.story-text-weapon-downstairs{
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
 
 
 
@@ -185,3 +207,4 @@ button:hover{
 .absolute{position: absolute;}
 .fixed{position:fixed}
 .show {display:block;}
+.hide {display:none}

@@ -44,7 +44,7 @@
                 Ljudet påminner mig om någonting men kan inte sätta fingret på det, nästan som ett skrapande fast mycket grövre.
                 Jag bor mitt ute i ingenstans så ljud som jag inte har hört innan skrämmer mig. Jag har bott själv i några år nu men har aldrig hört något sånt här innan.
             </p>
-            <p>Men nu har jag valt att göra något åt det, jag känner att det är fegt att gömma sig i sitt egna hus. </p>
+            <p style="justify-content: center;" class="flex">Men nu har jag valt att göra något åt det, jag känner att det är fegt att gömma sig i sitt egna hus. </p>
             </div>
             </div>
 
@@ -62,7 +62,7 @@
                     <p>När du kommer ner så hör du att ljudet kommer ifrån en halvöppen dörr. Du förbereder dig och springer in i rummet och tänder ljudet.<br> 
                         Där står någonting som liknar en människa men någonting är fel, jag förstår inte vad det är som är fel tills jag kollade på huvudet.
                         Den hade inga öron, inga alls. Istället var det bara ett hål på varsin sida av huvudet, han hade även helt svarta ögon.
-                        Varelsen började skriva i en ton som jag inte kan förklara.
+                        Varelsen började skrika i en ton som jag inte kan förklara.
                     </p>
                 </div>
 
@@ -75,6 +75,46 @@
                 <img src="..\Images\xfiles-hungry22.jpg" class="hungryImage" id="hungryImage">
 
             </div>
+
+            <div class="weapon-scene hide justify-center" id="weaponScene">
+                <div>
+                <p>Jag hittade ett basebollträ i garderoben. Jag hade helt glömt av att jag hade den här. 
+                    Men det är lika bra att ta med den ner, man vet aldrig vad som är där nere!</p>
+                </div>
+                <div class="weapon-choices absolute ">
+                    <button onclick="DownstairsWithWeapon()">Ta upp vapnet och gå ner</button>
+                    <button onclick="downStairs()">Gå ner utan vapnet</button>
+                </div>
+                
+                <img src="..\Images\baseball-bat.png" id="weaponImage">
+                <img src="..\Images\creepy-staircase.png" id="staircase2">
+                
+
+
+
+            </div>
+
+            <div class="staircaseWithWeapon justify-center hide" id="weaponDownstairs">
+                <div class="story-text-weapon-downstairs" id="storyText2">
+
+                    <p>När du kommer ner så hör du att ljudet kommer ifrån en halvöppen dörr. Du förbereder dig och springer in i rummet och tänder ljudet.<br> 
+                        Där står någonting som liknar en människa men någonting är fel, jag förstår inte vad det är som är fel tills jag kollade på huvudet.
+                        Den hade inga öron, inga alls. Istället var det bara ett hål på varsin sida av huvudet, han hade även helt svarta ögon.
+                        Varelsen började skrika i en ton som jag inte kan förklara. Slå han nu!
+                    </p>
+                </div>
+
+                <div class="choiceButton">
+
+                    <button class="springButton" id="sprintButton" onclick="punchMonster()">SLÅ!</button>
+
+                </div>
+
+                <img src="..\Images\xfiles-hungry22.jpg" class="hungryImage" id="hungryImage">
+
+            </div>
+            
+            
 
     </main>
     

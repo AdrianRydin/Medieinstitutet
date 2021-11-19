@@ -7,15 +7,24 @@ function main(){
 
 }
 
-/**Ger användaren ett username */
+/**
+ * Ger användaren ett username, ifall de inte skriver in användarnamn kommer en påminnelse upp
+*/
 
-// const userName = prompt("Hej! Välkommen till mitt interaktiva spel, vänligen ange ditt namn");
+var userName = prompt("Hej! Välkommen till mitt interaktiva spel, vänligen ange ditt namn");
+if(userName === null){
+  var userName = prompt('Du måste skriva in ett användarnamn')
+}
 
-// console.log(userName);
+console.log(userName);
 
 
 const pages = {
-  "firstDownStairs": document.getElementById('firstDownStairs')
+  "firstDownStairs": document.getElementById('firstDownStairs'),
+  "weaponScene": document.getElementById('weaponScene'),
+  "weaponDownstairs": document.getElementById('weaponDownstairs')
+
+
 
 }
 const items = {
@@ -26,7 +35,9 @@ const items = {
   "weaponButton": document.getElementById('secondButton'),
   "storyText1": document.getElementById('storyText'),
   "storyText2": document.getElementById('storyText2'),
-  "hungryImage": document.getElementById('hungryImage')
+  "hungryImage": document.getElementById('hungryImage'),
+  "baseballbat": document.getElementById('weaponImage'),
+  "staircase2": document.getElementById('staircase2')
   
 }
 
@@ -61,10 +72,17 @@ window.onclick = function(event) {
   items.firstDownStairsButton.style.display = "none"
   items.storyText1.style.display = "none"
   document.getElementById('subTitle').style.display = "none"
+  items.baseballbat.style.display = "none"
+  items.staircase2.style.display = "none"
   pages.firstDownStairs.style.display = "flex"
+
  }
 
- function springButton(){alert('Du dog!')}
+ function springButton(){
+   alert('Han hann ikapp dig! du dog! Prova igen ' + userName + "!")
+
+   setTimeout(downStairs(), 3000);
+  }
 
  function weapon(){
 
@@ -74,4 +92,20 @@ window.onclick = function(event) {
   items.firstDownStairsButton.style.display = "none"
   items.storyText1.style.display = "none"
   document.getElementById('subTitle').style.display = "none"
+
+  pages.weaponScene.style.display = "flex"
+
  }
+
+
+ function DownstairsWithWeapon(){
+   pages.weaponScene.style.display = "none"
+   pages.weaponDownstairs.style.display = "flex"
+ }
+
+
+ function punchMonster(){
+   alert('Grattis du vann ' + userName + "!");
+ }
+
+ 
