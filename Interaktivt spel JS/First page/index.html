@@ -7,11 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
 
     <header class="flex fixed align-center justify-center">
+
+        
             
         <div class="title">
         <h1>Någonting är fel med detta huset..</h1>
@@ -33,10 +35,10 @@
         <div class="story-div flex fixed">
 
             <div class="div-sub-title absolute flex">
-                <h3 class="sub-title">"Jag vaknade av det skumma ljudet igen.." </h3><br>
+                <h3 class="sub-title" id="subTitle">"Jag vaknade av det skumma ljudet igen.." </h3><br>
             </div>
 
-            <div class="story-text absolute flex justify-center">
+            <div class="story-text absolute flex justify-center" id="storyText">
             <p>Som du kanske förstår så är detta inte första gången jag har vaknat av detta.
                 Detta ljudet har hållt på i några dagar, men har inte vågat kolla vad det kommer ifrån än..
                 Ljudet påminner mig om någonting men kan inte sätta fingret på det, nästan som ett skrapande fast mycket grövre.
@@ -47,10 +49,31 @@
             </div>
 
             <img src="..\Images\creepy-staircase.png" id="staircase">
-            <img src="..\Images\baseball-bat.png" id="baseball">
+            <img src="..\Images\baseball-bat.png" id="baseballBat">
             <div class="choice-buttons absolute flex ">
-            <button id="firstButton"  onclick="nextScene()">Gå till nedervåningen och konfrontera ljudet direkt</button>
-            <button id="secondButton">Leta efter något vapen att försvara dig med</button>
+            <button id="firstButton" onclick="downStairs()">Gå till nedervåningen och konfrontera ljudet direkt</button>
+            <button id="secondButton" onclick="weapon()">Leta efter något vapen att försvara dig med</button>
+            </div>
+
+
+            <div class="Scene2Staircase justify-center" id="firstDownStairs">
+                <div class="story-text-staircase" id="storyText2">
+
+                    <p>När du kommer ner så hör du att ljudet kommer ifrån en halvöppen dörr. Du förbereder dig och springer in i rummet och tänder ljudet.<br> 
+                        Där står någonting som liknar en människa men någonting är fel, jag förstår inte vad det är som är fel tills jag kollade på huvudet.
+                        Den hade inga öron, inga alls. Istället var det bara ett hål på varsin sida av huvudet, han hade även helt svarta ögon.
+                        Varelsen började skriva i en ton som jag inte kan förklara.
+                    </p>
+                </div>
+
+                <div class="choiceButton">
+
+                    <button class="springButton" id="sprintButton" onclick="springButton()">SPRING!</button>
+
+                </div>
+
+                <img src="..\Images\xfiles-hungry22.jpg" class="hungryImage" id="hungryImage">
+
             </div>
 
     </main>

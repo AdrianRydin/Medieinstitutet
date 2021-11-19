@@ -98,6 +98,7 @@ main{
     
 }
 button{
+    transition: 0.25s;
     padding:30px;
     font-size: 20px;
     font-weight:bolder;
@@ -110,7 +111,7 @@ button{
 }
 
 button:hover{
-    flex-grow: 0.01;  
+    transform: scale(1.03);
     
 }
 #staircase{
@@ -121,20 +122,58 @@ button:hover{
 
 }
 
-#baseball{
+#baseballBat{
     width: 450px;
     right:18%;
     position: absolute;
     bottom:10%;
+    display: block;
 }
-@media (max-width:870px){
-    header{
 
-        justify-content: space-evenly;
-        display: flex;
-
+.Scene2Staircase{
+    display: none;
+    height:100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.story-text-staircase{
+    height:20%;
+}
+.springButton{
+    background-image: linear-gradient(45deg, rgb(70, 25, 12), rgb(40, 48, 65));
+    border-color: rgb(65, 5, 5);
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+    padding:50px;
+    font-size: 20px;
+    border-radius: 10px;
+    height:10%;
+    top:40%;
+    position: absolute;
+    right:15%;
+    align-items: center;
+    display: flex;
+}
+.hungryImage{
+    width:1000px;
+    position: absolute;
+    bottom:200px;
+    left:100px;
+    animation-name: hungry;
+    transition: 2s;
+}
+@keyframes hungry{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
+
+
 
 
 
